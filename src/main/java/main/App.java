@@ -70,7 +70,7 @@ public class App
                             ObjectInputStream gameLoader = new ObjectInputStream(new FileInputStream(loadFile));
                             newCave = (Cave) gameLoader.readObject();
                             gameLoader.close();
-                            System.out.println("Peli ladattu tiedostosta " + loadFile + ". Tervetuloa takaisin, " + newCave.player.getPlayerName());
+                            System.out.println("Peli ladattu tiedostosta " + loadFile + ". Tervetuloa takaisin, " + newCave.player.getPlayerName() + ".");
                         } catch (ClassNotFoundException e) {
                             e.printStackTrace();
                         } catch (IOException e) {

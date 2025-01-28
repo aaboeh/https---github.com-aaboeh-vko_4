@@ -16,8 +16,12 @@ public class Cave implements Serializable{
     }
 
     public void listMonsters() {
-        for (int i = 0; i < monsters.size(); i++) {
-            monsters.get(i).printInfo(i + 1);
+        if (monsters.isEmpty()) {
+            System.out.println("Luola on tyhjä.");
+        } else {
+            for (int i = 0; i < monsters.size(); i++) {
+                monsters.get(i).printInfo(i + 1);
+            }
         }
     }
 }
