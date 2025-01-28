@@ -39,7 +39,12 @@ public class App
                         newCave.addMonster(new Monster(monsterType, monsterHealth));
                         break;
                     case 2:
-                        newCave.listMonsters();
+                        if (newCave.monsters.isEmpty()) {
+                            System.out.println("Luola on tyhjä.");
+                        } else {
+                            System.out.println("Luolan hirviöt:");
+                            newCave.listMonsters();
+                        }
                         break;
                     case 3:
                         System.out.println("Valitse hirviö, johon hyökätä:");
