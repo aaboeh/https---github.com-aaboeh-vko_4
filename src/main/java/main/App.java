@@ -39,7 +39,6 @@ public class App
                         newCave.addMonster(new Monster(monsterType, monsterHealth));
                         break;
                     case 2:
-                        System.out.println("Luolan hirviöt:");
                         newCave.listMonsters();
                         break;
                     case 3:
